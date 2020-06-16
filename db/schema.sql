@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS profile_DB;
+CREATE DATABASE profile_DB;
+
+USE profile_DB;
+
+CREATE TABLE profiles (
+  id INT NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(100) NOT NULL,
+  last_name VARCHAR(100) NOT NULL,
+  department VARCHAR(100) NOT NULL,
+  salary INTEGER(30) NOT NULL,
+  PRIMARY KEY (id)
+);
